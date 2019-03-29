@@ -37,7 +37,7 @@ function requestData(){
         if (waitTimes === 50) { // 未接收到数据 等待
             waitTimes = 0
             repeats++
-            if (repeats < 3) { // 连接3次等待都未收到数据
+            if (repeats < 4) { // 连接3次等待都未收到数据
                 waitTimes = 0
                 isReceive = true;
             } else {
